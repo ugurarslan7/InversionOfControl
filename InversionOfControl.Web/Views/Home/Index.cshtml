@@ -1,0 +1,16 @@
+﻿@{ ViewData["Title"] = "Home Page"; }
+
+<h1 style="color:red">Singleton Service </h1>
+<h5>A Singleton Service is created only once during the lifecycle of the application and the same instance is used for each request. </h5>
+<h2>@ViewBag.timeSingle1</h2>
+<h2>@ViewBag.timeSingle2</h2>
+<br />
+<h1 style="color:red">Scoped Service </h1>
+<h5>This lifecycle ensures that the same object is used throughout an HTTP request. When a new HTTP request arrives, a new object is created for the service. </h5>
+<h2>@ViewBag.timeScoped1</h2>
+<h2>@ViewBag.timeScoped2</h2>
+<br />
+<h1 style="color:red">Transient Service </h1>
+<h5>A service defined as transient creates a new instance each time it is requested.  </h5>
+<h2>@ViewBag.timeT1</h2>
+<h2>@ViewBag.timeT2</h2>
